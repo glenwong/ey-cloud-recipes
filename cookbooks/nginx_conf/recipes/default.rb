@@ -1,8 +1,8 @@
 # Customize nginx config
 
-remote_file "/etc/nginx/servers/#{app_name}/custom.locations.conf" do
-  source "custom.locations.conf"
-  owner "deploy"
-  group "deploy"
+remote_file "/etc/nginx/servers/default.conf" do
+  source "default.conf"
+  owner "root"
+  group "root"
   mode 0644
 end
