@@ -64,6 +64,8 @@
 
 #require_recipe 'nginx'
 
+require_recipe "nginx_conf"
+
 #uncomment to include the mysql_replication_check recipe
 #require_recipe "mysql_replication_check"
 
